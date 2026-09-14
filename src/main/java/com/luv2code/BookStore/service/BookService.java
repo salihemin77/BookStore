@@ -9,5 +9,6 @@ public interface BookService {
     void delete(int id);
     Book findById(int id);
    List<Book> findAll();
+   List<Book> searchByTitle(String title);
 
 }

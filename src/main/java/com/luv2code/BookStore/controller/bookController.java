@@ -31,6 +31,11 @@ public class bookController {
         bookService.delete(bookId);
 
     }
+    @GetMapping("/books/search")
+    public List<Book> searchByTitle(@RequestParam("title") String title) {
+        return bookService.searchByTitle(title);
+
+    }
 
 
 

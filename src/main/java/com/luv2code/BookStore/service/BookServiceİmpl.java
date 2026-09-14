@@ -40,4 +40,9 @@ public class BookServiceİmpl implements BookService {
     public List<Book> findAll() {
         return bookRepository.findAll();
     }
+
+    @Override
+    public List<Book> searchByTitle(String title) {
+        return  bookRepository.findByTitleContainingIgnoreCase(title);
+    }
 }
