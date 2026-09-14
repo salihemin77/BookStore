@@ -16,7 +16,7 @@ public class Book {
     private double price;
     @Column(name = "stock")
     private int stock;
-
+//saece branch denemek icin yorum  yazdım
     public Book() {
 
     }
